@@ -1,0 +1,50 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {iaApplyEQChange = id; iaBandValueChanged = id; iaSliderParamChanged = id; }; 
+            CLASS = "SFCEcho_UIView"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                uiBandSlider0 = NSSlider; 
+                uiBandSlider1 = NSSlider; 
+                uiBandSlider2 = NSSlider; 
+                uiBandSlider3 = NSSlider; 
+                uiBandSlider4 = NSSlider; 
+                uiBandValue0 = NSTextField; 
+                uiBandValue1 = NSTextField; 
+                uiBandValue2 = NSTextField; 
+                uiBandValue3 = NSTextField; 
+                uiBandValue4 = NSTextField; 
+                uiParamFIRTapTextField0 = NSTextField; 
+                uiParamFIRTapTextField1 = NSTextField; 
+                uiParamFIRTapTextField2 = NSTextField; 
+                uiParamFIRTapTextField3 = NSTextField; 
+                uiParamFIRTapTextField4 = NSTextField; 
+                uiParamFIRTapTextField5 = NSTextField; 
+                uiParamFIRTapTextField6 = NSTextField; 
+                uiParamFIRTapTextField7 = NSTextField; 
+                uiParamSlider0 = NSSlider; 
+                uiParamSlider1 = NSSlider; 
+                uiParamSlider2 = NSSlider; 
+                uiParamSlider3 = NSSlider; 
+                uiParamSlider4 = NSSlider; 
+                uiParamSlider5 = NSSlider; 
+                uiParamTextField0 = NSTextField; 
+                uiParamTextField1 = NSTextField; 
+                uiParamTextField2 = NSTextField; 
+                uiParamTextField3 = NSTextField; 
+                uiParamTextField4 = NSTextField; 
+                uiParamTextField5 = NSTextField; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            CLASS = "SFCEcho_ViewFactory"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {uiFreshlyLoadedView = "SFCEcho_UIView"; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

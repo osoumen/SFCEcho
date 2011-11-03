@@ -1,0 +1,5 @@
+//
+// Prefix header for all source files of the 'SFCEcho' target in the 'SFCEcho' project.
+//
+
+#include <Carbon/Carbon.h>
