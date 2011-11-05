@@ -148,6 +148,8 @@
 		8A00C33B0B1EB3F300338862 /* CACFDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A00C3370B1EB3F300338862 /* CACFDictionary.cpp */; };
 		8A00C33C0B1EB3F300338862 /* CACFNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A00C3380B1EB3F300338862 /* CACFNumber.cpp */; };
 		8A00C33D0B1EB3F300338862 /* CACFString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A00C3390B1EB3F300338862 /* CACFString.cpp */; };
+		8A1D2460146547D600FD4C47 /* bt_copy0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1D245E146547D600FD4C47 /* bt_copy0.png */; };
+		8A1D2461146547D600FD4C47 /* bt_copy1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1D245F146547D600FD4C47 /* bt_copy1.png */; };
 		8A426DAD0B1CA972002E81EE /* SFCEchodefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A426DAC0B1CA972002E81EE /* SFCEchodefines.h */; };
 		8A426DAE0B1CA972002E81EE /* SFCEchodefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A426DAC0B1CA972002E81EE /* SFCEchodefines.h */; };
 		8A7EB72D0B1F0F9E00F60189 /* SFCEchoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A7EB72B0B1F0F9E00F60189 /* SFCEchoView.h */; };
@@ -372,6 +374,8 @@
 		8A00C3370B1EB3F300338862 /* CACFDictionary.cpp */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.cpp.cpp; name = CACFDictionary.cpp; path = /Developer/Examples/CoreAudio/PublicUtility/CACFDictionary.cpp; sourceTree = "<absolute>"; };
 		8A00C3380B1EB3F300338862 /* CACFNumber.cpp */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.cpp.cpp; name = CACFNumber.cpp; path = /Developer/Examples/CoreAudio/PublicUtility/CACFNumber.cpp; sourceTree = "<absolute>"; };
 		8A00C3390B1EB3F300338862 /* CACFString.cpp */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.cpp.cpp; name = CACFString.cpp; path = /Developer/Examples/CoreAudio/PublicUtility/CACFString.cpp; sourceTree = "<absolute>"; };
+		8A1D245E146547D600FD4C47 /* bt_copy0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_copy0.png; sourceTree = "<group>"; };
+		8A1D245F146547D600FD4C47 /* bt_copy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_copy1.png; sourceTree = "<group>"; };
 		8A426DAC0B1CA972002E81EE /* SFCEchodefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCEchodefines.h; sourceTree = "<group>"; };
 		8A7EB72B0B1F0F9E00F60189 /* SFCEchoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCEchoView.h; sourceTree = "<group>"; };
 		8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SFCEchoView.cpp; sourceTree = "<group>"; };
@@ -596,6 +600,8 @@
 		8A00C20E0B1EB1E700338862 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				8A1D245E146547D600FD4C47 /* bt_copy0.png */,
+				8A1D245F146547D600FD4C47 /* bt_copy1.png */,
 				8A00C20F0B1EB1E700338862 /* AUBackground.png */,
 				8A00C2110B1EB1E700338862 /* editor.nib */,
 				8A00C2120B1EB1E700338862 /* knob.png */,
@@ -1013,6 +1019,8 @@
 				8A00C2BD0B1EB1E700338862 /* slider.png in Resources */,
 				8A00C2BE0B1EB1E700338862 /* sliderThumb.png in Resources */,
 				8A00C2BF0B1EB1E700338862 /* window.nib in Resources */,
+				8A1D2460146547D600FD4C47 /* bt_copy0.png in Resources */,
+				8A1D2461146547D600FD4C47 /* bt_copy1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

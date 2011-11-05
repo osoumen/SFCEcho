@@ -26,12 +26,15 @@ public:
     void InitWindow(CFBundleRef sBundle);
 	virtual void FinishWindow(CFBundleRef sBundle);
 	virtual bool HandleEventForView(EventRef event, HIViewRef view);
+	virtual bool HandleCommand(EventRef inEvent, HICommandExtended &cmd);
 	virtual int GetFontsize() { return 10; }
 	virtual int GetTextJustification() { return teJustRight; }
 	virtual CFStringRef GetFontname() { return CFSTR("Monaco"); }
 	
 	virtual void PropertyHasChanged(AudioUnitPropertyID inPropertyID, AudioUnitScope inScope,  
                                     AudioUnitElement inElement);
+private:
+	void UpdateXMSNESText();
 };
 
 #endif

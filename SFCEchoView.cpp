@@ -66,6 +66,28 @@ bool SFCEchoView::HandleEventForView(EventRef event, HIViewRef view)
 	return false;
 }
 
+bool SFCEchoView::HandleCommand(EventRef inEvent, HICommandExtended &cmd)
+{
+	switch (cmd.commandID) {
+		case 'copy':
+		{
+			UpdateXMSNESText();
+			return true;
+		}
+	}
+	return false;
+}
+
+void SFCEchoView::UpdateXMSNESText()
+{
+	HIViewID	id = {'text',0};
+	HIViewRef	control;
+	OSStatus	result;
+	result = HIViewFindByID(mRootUserPane, id, &control);
+	
+	//HIViewSetText( control, CFSTR("test") );
+}
+
 void SFCEchoView::PropertyHasChanged(AudioUnitPropertyID inPropertyID, AudioUnitScope inScope,  
 						AudioUnitElement inElement)
 {

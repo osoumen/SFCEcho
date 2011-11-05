@@ -11,15 +11,15 @@
 #include "AUGUIUtilities.h"
 #include "AUCarbonViewEnhancedControl.h"
 #include "TPngPictControl.h"
-//#include "TValuePictControl.h"
+#include "TValuePictControl.h"
 #include "TValuePictButtonControl.h"
 #include "TKnobControl.h"
 //#include "TKnobArcControl.h"
 #include "TSliderControl.h"
 //#include "TMeterControl.h"
 //#include "TMeterPartialControl.h"
-//#include "TValueTextControl.h"
-//#include "TImageButton.h"
+#include "TValueTextControl.h"
+#include "TImageButton.h"
 //#include "TImagePopup.h"
 #include "TTransparentEditText.h"
 #include "TMultiPane.h"
@@ -305,7 +305,7 @@ OSStatus CAUCarbonViewNib::CreateUI(Float32 x, Float32 y)
     
     // Register standard SDK controls - other classes must be registered in the application view class
     TViewNoCompositingCompatible::SetClassBundle(mBundleRef);
-    //TViewNoCompositingCompatible::RegisterClassForBundleID<TValuePictControl>(mBundleID);
+    TViewNoCompositingCompatible::RegisterClassForBundleID<TValuePictControl>(mBundleID);
     TViewNoCompositingCompatible::RegisterClassForBundleID<TPngPictControl>(mBundleID);
     TViewNoCompositingCompatible::RegisterClassForBundleID<TValuePictButtonControl>(mBundleID);
     TViewNoCompositingCompatible::RegisterClassForBundleID<TKnobControl>(mBundleID);
@@ -313,8 +313,8 @@ OSStatus CAUCarbonViewNib::CreateUI(Float32 x, Float32 y)
     TViewNoCompositingCompatible::RegisterClassForBundleID<TSliderControl>(mBundleID);
     //TViewNoCompositingCompatible::RegisterClassForBundleID<TMeterControl>(mBundleID);
     //TViewNoCompositingCompatible::RegisterClassForBundleID<TMeterPartialControl>(mBundleID);
-    //TViewNoCompositingCompatible::RegisterClassForBundleID<TValueTextControl>(mBundleID);
-    //TViewNoCompositingCompatible::RegisterClassForBundleID<TImageButton>(mBundleID);
+    TViewNoCompositingCompatible::RegisterClassForBundleID<TValueTextControl>(mBundleID);
+    TViewNoCompositingCompatible::RegisterClassForBundleID<TImageButton>(mBundleID);
     //TViewNoCompositingCompatible::RegisterClassForBundleID<TImagePopup>(mBundleID);
     TViewNoCompositingCompatible::RegisterClassForBundleID<TTransparentEditText>(mBundleID);
     TViewNoCompositingCompatible::RegisterClassForBundleID<TMultiPane>(mBundleID);
