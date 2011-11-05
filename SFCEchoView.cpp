@@ -84,8 +84,41 @@ void SFCEchoView::UpdateXMSNESText()
 	HIViewRef	control;
 	OSStatus	result;
 	result = HIViewFindByID(mRootUserPane, id, &control);
+	CFStringRef	param_str;
 	
-	//HIViewSetText( control, CFSTR("test") );
+	int vol_l = mEditAudioUnit->GetParameter( kParam_echovol_L );
+	int vol_r = mEditAudioUnit->GetParameter( kParam_echovol_R );
+	if (vol_l >= 0) {
+		vol_l = 32 + vol_l * 48 / 127;
+	}
+	else {
+		vol_l = 80 - vol_l * 47 / 128;
+	}
+	if (vol_r >= 0) {
+		vol_r = 32 + vol_r * 48 / 127;
+	}
+	else {
+		vol_r = 80 - vol_r * 47 / 128;
+	}
+	
+	param_str = CFStringCreateWithFormat(NULL,NULL,
+										 CFSTR(">%c%c%02x%02x%02x%02x%02x%02x%02x%02x%1x%02x"),
+										 vol_l,
+										 vol_r,
+										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir0 ),
+										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir1 ),
+										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir2 ),
+										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir3 ),
+										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir4 ),
+										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir5 ),
+										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir6 ),
+										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir7 ),
+										 (UInt8)mEditAudioUnit->GetParameter( kParam_echodelay ),
+										 (UInt8)mEditAudioUnit->GetParameter( kParam_echoFB )
+										 );
+	
+	HIViewSetText( control, param_str );
+	CFRelease(param_str);
 }
 
 void SFCEchoView::PropertyHasChanged(AudioUnitPropertyID inPropertyID, AudioUnitScope inScope,  
