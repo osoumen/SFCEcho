@@ -34,7 +34,7 @@ public:
 	virtual void PropertyHasChanged(AudioUnitPropertyID inPropertyID, AudioUnitScope inScope,  
                                     AudioUnitElement inElement);
 private:
-	void UpdateXMSNESText();
+	CFStringRef CreateXMSNESText();
 };
 
 #endif

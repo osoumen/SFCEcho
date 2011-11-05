@@ -16,7 +16,7 @@
 #ifdef DEBUG
 	#define kSFCEchoVersion 0xFFFFFFFF
 #else
-	#define kSFCEchoVersion 0x00010000	
+	#define kSFCEchoVersion 0x00010100	
 #endif
 
 //~~~~~~~~~~~~~~  Change!!! ~~~~~~~~~~~~~~~~~~~~~//

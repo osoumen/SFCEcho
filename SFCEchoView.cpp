@@ -71,19 +71,36 @@ bool SFCEchoView::HandleCommand(EventRef inEvent, HICommandExtended &cmd)
 	switch (cmd.commandID) {
 		case 'copy':
 		{
-			UpdateXMSNESText();
+			CFStringRef param_str = CreateXMSNESText();
+			
+			HIViewID	id = {'text',0};
+			HIViewRef	control;
+			OSStatus	result;
+			result = HIViewFindByID(mRootUserPane, id, &control);
+			HIViewSetText( control, param_str );
+			
+			OSStatus err = noErr;
+			PasteboardRef theClipboard;
+			err = PasteboardCreate( kPasteboardClipboard, &theClipboard );
+			err = PasteboardClear( theClipboard );
+			
+			char text[256];
+			CFStringGetCString( param_str, text, 256, kCFStringEncodingUTF8 );
+			CFDataRef   data = CFDataCreate( kCFAllocatorDefault, (UInt8*)text, (strlen(text)) * sizeof(char) );
+			err = PasteboardPutItemFlavor( theClipboard, (PasteboardItemID)1, kUTTypeUTF8PlainText, data, 0 );
+			
+			CFRelease(theClipboard);
+			CFRelease( data );
+			CFRelease(param_str);
+			
 			return true;
 		}
 	}
 	return false;
 }
 
-void SFCEchoView::UpdateXMSNESText()
+CFStringRef SFCEchoView::CreateXMSNESText()
 {
-	HIViewID	id = {'text',0};
-	HIViewRef	control;
-	OSStatus	result;
-	result = HIViewFindByID(mRootUserPane, id, &control);
 	CFStringRef	param_str;
 	
 	Float32	echovol_L;
@@ -128,7 +145,7 @@ void SFCEchoView::UpdateXMSNESText()
 	}
 	
 	param_str = CFStringCreateWithFormat(NULL,NULL,
-										 CFSTR(">%c%c%02x%02x%02x%02x%02x%02x%02x%02x%1x%02x"),
+										 CFSTR(">%c%c%02X%02X%02X%02X%02X%02X%02X%02X%1X%02X"),
 										 vol_l,
 										 vol_r,
 										 (UInt8)fir0,
@@ -142,9 +159,7 @@ void SFCEchoView::UpdateXMSNESText()
 										 (UInt8)echodelay,
 										 (UInt8)echoFB
 										 );
-	
-	HIViewSetText( control, param_str );
-	CFRelease(param_str);
+	return param_str;
 }
 
 void SFCEchoView::PropertyHasChanged(AudioUnitPropertyID inPropertyID, AudioUnitScope inScope,  
