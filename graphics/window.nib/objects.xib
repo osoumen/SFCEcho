@@ -196,11 +196,11 @@
                 <string name="classID">com.VeMa.audiounit.SFCEcho.push</string>
               </object>
               <object class="IBCarbonStaticText" id="289">
-                <string name="bounds">142 265 153 355 </string>
+                <string name="bounds">142 235 153 361 </string>
                 <ostype name="controlSignature">text</ostype>
                 <boolean name="small">TRUE</boolean>
                 <int name="controlSize">3</int>
-                <string name="title">Mini Static Text</string>
+                <int name="justification">-1</int>
               </object>
             </array>
             <ostype name="controlSignature">AUid</ostype>

@@ -86,35 +86,61 @@ void SFCEchoView::UpdateXMSNESText()
 	result = HIViewFindByID(mRootUserPane, id, &control);
 	CFStringRef	param_str;
 	
-	int vol_l = mEditAudioUnit->GetParameter( kParam_echovol_L );
-	int vol_r = mEditAudioUnit->GetParameter( kParam_echovol_R );
+	Float32	echovol_L;
+	Float32 echovol_R;
+	Float32 fir0;
+	Float32 fir1;
+	Float32 fir2;
+	Float32 fir3;
+	Float32 fir4;
+	Float32 fir5;
+	Float32 fir6;
+	Float32 fir7;
+	Float32 echodelay;
+	Float32 echoFB;
+	
+	AudioUnitGetParameter(mEditAudioUnit,kParam_echovol_L,kAudioUnitScope_Global,0,&echovol_L);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_echovol_R,kAudioUnitScope_Global,0,&echovol_R);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_fir0,kAudioUnitScope_Global,0,&fir0);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_fir1,kAudioUnitScope_Global,0,&fir1);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_fir2,kAudioUnitScope_Global,0,&fir2);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_fir3,kAudioUnitScope_Global,0,&fir3);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_fir4,kAudioUnitScope_Global,0,&fir4);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_fir5,kAudioUnitScope_Global,0,&fir5);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_fir6,kAudioUnitScope_Global,0,&fir6);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_fir7,kAudioUnitScope_Global,0,&fir7);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_echodelay,kAudioUnitScope_Global,0,&echodelay);
+	AudioUnitGetParameter(mEditAudioUnit,kParam_echoFB,kAudioUnitScope_Global,0,&echoFB);
+	
+	int vol_l = echovol_L;
+	int vol_r = echovol_R;
 	if (vol_l >= 0) {
-		vol_l = 32 + vol_l * 48 / 127;
+		vol_l = 32 + vol_l * 47 / 127;
 	}
 	else {
-		vol_l = 80 - vol_l * 47 / 128;
+		vol_l = 80 - vol_l * 46 / 128;
 	}
 	if (vol_r >= 0) {
-		vol_r = 32 + vol_r * 48 / 127;
+		vol_r = 32 + vol_r * 47 / 127;
 	}
 	else {
-		vol_r = 80 - vol_r * 47 / 128;
+		vol_r = 80 - vol_r * 46 / 128;
 	}
 	
 	param_str = CFStringCreateWithFormat(NULL,NULL,
 										 CFSTR(">%c%c%02x%02x%02x%02x%02x%02x%02x%02x%1x%02x"),
 										 vol_l,
 										 vol_r,
-										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir0 ),
-										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir1 ),
-										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir2 ),
-										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir3 ),
-										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir4 ),
-										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir5 ),
-										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir6 ),
-										 (UInt8)mEditAudioUnit->GetParameter( kParam_fir7 ),
-										 (UInt8)mEditAudioUnit->GetParameter( kParam_echodelay ),
-										 (UInt8)mEditAudioUnit->GetParameter( kParam_echoFB )
+										 (UInt8)fir0,
+										 (UInt8)fir1,
+										 (UInt8)fir2,
+										 (UInt8)fir3,
+										 (UInt8)fir4,
+										 (UInt8)fir5,
+										 (UInt8)fir6,
+										 (UInt8)fir7,
+										 (UInt8)echodelay,
+										 (UInt8)echoFB
 										 );
 	
 	HIViewSetText( control, param_str );

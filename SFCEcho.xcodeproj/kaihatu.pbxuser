@@ -143,6 +143,22 @@
 			8A1D24A21465544D00FD4C47 /* PBXTextBookmark */ = 8A1D24A21465544D00FD4C47 /* PBXTextBookmark */;
 			8A1D24A6146554B400FD4C47 /* PBXTextBookmark */ = 8A1D24A6146554B400FD4C47 /* PBXTextBookmark */;
 			8A1D24AE1465575800FD4C47 /* PBXTextBookmark */ = 8A1D24AE1465575800FD4C47 /* PBXTextBookmark */;
+			8A1D24B014655ECA00FD4C47 /* PBXTextBookmark */ = 8A1D24B014655ECA00FD4C47 /* PBXTextBookmark */;
+			8A1D24B314655EE300FD4C47 /* PBXTextBookmark */ = 8A1D24B314655EE300FD4C47 /* PBXTextBookmark */;
+			8A1D24C11465627E00FD4C47 /* PBXTextBookmark */ = 8A1D24C11465627E00FD4C47 /* PBXTextBookmark */;
+			8A1D24C21465628E00FD4C47 /* PBXTextBookmark */ = 8A1D24C21465628E00FD4C47 /* PBXTextBookmark */;
+			8A1D24C51465628E00FD4C47 /* PBXTextBookmark */ = 8A1D24C51465628E00FD4C47 /* PBXTextBookmark */;
+			8A1D24C71465628E00FD4C47 /* PBXTextBookmark */ = 8A1D24C71465628E00FD4C47 /* PBXTextBookmark */;
+			8A1D24CB1465628E00FD4C47 /* PBXTextBookmark */ = 8A1D24CB1465628E00FD4C47 /* PBXTextBookmark */;
+			8A1D24CC1465628E00FD4C47 /* PBXTextBookmark */ = 8A1D24CC1465628E00FD4C47 /* PBXTextBookmark */;
+			8A1D24CD146562EA00FD4C47 /* PBXTextBookmark */ = 8A1D24CD146562EA00FD4C47 /* PBXTextBookmark */;
+			8A1D24CE1465630700FD4C47 /* PBXTextBookmark */ = 8A1D24CE1465630700FD4C47 /* PBXTextBookmark */;
+			8A1D24CF1465630700FD4C47 /* PBXTextBookmark */ = 8A1D24CF1465630700FD4C47 /* PBXTextBookmark */;
+			8A1D24D01465630700FD4C47 /* PBXTextBookmark */ = 8A1D24D01465630700FD4C47 /* PBXTextBookmark */;
+			8A1D24D11465631A00FD4C47 /* PBXTextBookmark */ = 8A1D24D11465631A00FD4C47 /* PBXTextBookmark */;
+			8A1D24D51465638D00FD4C47 /* PBXTextBookmark */ = 8A1D24D51465638D00FD4C47 /* PBXTextBookmark */;
+			8A1D24D91465652300FD4C47 /* PBXTextBookmark */ = 8A1D24D91465652300FD4C47 /* PBXTextBookmark */;
+			8A1D24DC1465659000FD4C47 /* PBXTextBookmark */ = 8A1D24DC1465659000FD4C47 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 8AD2EE8A0AA2F52300B49FE9 /* Source Control */;
 		userBuildSettings = {
@@ -429,9 +445,9 @@
 	8A00C2FD0B1EB29B00338862 /* AUCarbonViewBase.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1286, 2520}}";
-			sepNavSelRange = "{6101, 14}";
-			sepNavVisRect = "{{0, 1583}, {722, 825}}";
-			sepNavWindowFrame = "{{15, 43}, {761, 954}}";
+			sepNavSelRange = "{6086, 59}";
+			sepNavVisRect = "{{0, 1590}, {722, 813}}";
+			sepNavWindowFrame = "{{15, 60}, {761, 942}}";
 		};
 	};
 	8A00C2FE0B1EB29B00338862 /* AUCarbonViewControl.cpp */ = {
@@ -612,6 +628,179 @@
 		vrLen = 1321;
 		vrLoc = 1735;
 	};
+	8A1D24B014655ECA00FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */;
+		name = "SFCEchoView.cpp: 152";
+		rLen = 0;
+		rLoc = 4989;
+		rType = 0;
+		vrLen = 294;
+		vrLoc = 1855;
+	};
+	8A1D24B314655EE300FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */;
+		name = "SFCEchoView.cpp: 104";
+		rLen = 0;
+		rLoc = 3625;
+		rType = 0;
+		vrLen = 1756;
+		vrLoc = 1853;
+	};
+	8A1D24C11465627E00FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */;
+		name = "SFCEchoView.cpp: 193";
+		rLen = 0;
+		rLoc = 4989;
+		rType = 0;
+		vrLen = 294;
+		vrLoc = 1855;
+	};
+	8A1D24C21465628E00FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */;
+		name = "SFCEchoView.cpp: 113";
+		rLen = 0;
+		rLoc = 3369;
+		rType = 0;
+		vrLen = 1895;
+		vrLoc = 2189;
+	};
+	8A1D24C51465628E00FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A1D24C61465628E00FD4C47 /* AUComponent.h */;
+		rLen = 1;
+		rLoc = 345;
+		rType = 1;
+	};
+	8A1D24C61465628E00FD4C47 /* AUComponent.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AUComponent.h;
+		path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers/AUComponent.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {788, 6440}}";
+			sepNavSelRange = "{10699, 43}";
+			sepNavVisRect = "{{0, 4432}, {747, 811}}";
+			sepNavWindowFrame = "{{15, 57}, {786, 940}}";
+		};
+	};
+	8A1D24C71465628E00FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A1D24C81465628E00FD4C47 /* AUComponent.h */;
+		name = "AudioUnitGetParameter(\t\t\t\tAudioUnit\t\t\t\tci,";
+		rLen = 43;
+		rLoc = 10699;
+		rType = 0;
+		vrLen = 1975;
+		vrLoc = 9710;
+	};
+	8A1D24C81465628E00FD4C47 /* AUComponent.h */ = {
+		isa = PBXFileReference;
+		name = AUComponent.h;
+		path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers/AUComponent.h;
+		sourceTree = "<absolute>";
+	};
+	8A1D24CB1465628E00FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8BA05A7F072073D200365D66 /* AUBase.cpp */;
+		rLen = 1;
+		rLoc = 1043;
+		rType = 1;
+	};
+	8A1D24CC1465628E00FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8BA05A7F072073D200365D66 /* AUBase.cpp */;
+		name = "AUBase.cpp: GetParameter";
+		rLen = 169;
+		rLoc = 32087;
+		rType = 0;
+		vrLen = 1870;
+		vrLoc = 31173;
+	};
+	8A1D24CD146562EA00FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */;
+		name = "SFCEchoView.cpp: 193";
+		rLen = 0;
+		rLoc = 4989;
+		rType = 0;
+		vrLen = 294;
+		vrLoc = 1855;
+	};
+	8A1D24CE1465630700FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */;
+		name = "SFCEchoView.cpp: 113";
+		rLen = 0;
+		rLoc = 3369;
+		rType = 0;
+		vrLen = 1895;
+		vrLoc = 2189;
+	};
+	8A1D24CF1465630700FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A1D24C61465628E00FD4C47 /* AUComponent.h */;
+		name = "AudioUnitGetParameter(\t\t\t\tAudioUnit\t\t\t\tci,";
+		rLen = 43;
+		rLoc = 10699;
+		rType = 0;
+		vrLen = 1975;
+		vrLoc = 9710;
+	};
+	8A1D24D01465630700FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8BA05A7F072073D200365D66 /* AUBase.cpp */;
+		name = "AUBase.cpp: GetParameter";
+		rLen = 169;
+		rLoc = 32087;
+		rType = 0;
+		vrLen = 1870;
+		vrLoc = 31173;
+	};
+	8A1D24D11465631A00FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */;
+		name = "SFCEchoView.cpp: 113";
+		rLen = 0;
+		rLoc = 3369;
+		rType = 0;
+		vrLen = 1895;
+		vrLoc = 2189;
+	};
+	8A1D24D51465638D00FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */;
+		name = "SFCEchoView.cpp: 128";
+		rLen = 0;
+		rLoc = 3625;
+		rType = 0;
+		vrLen = 1419;
+		vrLoc = 1198;
+	};
+	8A1D24D91465652300FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */;
+		name = "SFCEchoView.cpp: 124";
+		rLen = 0;
+		rLoc = 3571;
+		rType = 0;
+		vrLen = 1912;
+		vrLoc = 1963;
+	};
+	8A1D24DC1465659000FD4C47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */;
+		name = "SFCEchoView.cpp: 127";
+		rLen = 0;
+		rLoc = 3615;
+		rType = 0;
+		vrLen = 1912;
+		vrLoc = 1963;
+	};
 	8A426DAC0B1CA972002E81EE /* SFCEchodefines.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {694, 812}}";
@@ -666,9 +855,9 @@
 	};
 	8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {694, 1666}}";
-			sepNavSelRange = "{2124, 0}";
-			sepNavVisRect = "{{0, 855}, {694, 811}}";
+			sepNavIntBoundsRect = "{{0, 0}, {694, 2492}}";
+			sepNavSelRange = "{3615, 0}";
+			sepNavVisRect = "{{0, 1107}, {694, 811}}";
 			sepNavWindowFrame = "{{476, 62}, {733, 940}}";
 		};
 	};
@@ -770,8 +959,8 @@
 	8BA05A7F072073D200365D66 /* AUBase.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1094, 27622}}";
-			sepNavSelRange = "{32062, 70}";
-			sepNavVisRect = "{{0, 791}, {889, 811}}";
+			sepNavSelRange = "{32087, 169}";
+			sepNavVisRect = "{{0, 14205}, {889, 811}}";
 			sepNavWindowFrame = "{{15, 62}, {928, 940}}";
 		};
 	};
@@ -786,8 +975,8 @@
 	8BA05A88072073D200365D66 /* AUScopeElement.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {962, 6636}}";
-			sepNavSelRange = "{4323, 12}";
-			sepNavVisRect = "{{0, 1016}, {962, 811}}";
+			sepNavSelRange = "{4302, 64}";
+			sepNavVisRect = "{{0, 1017}, {962, 811}}";
 			sepNavWindowFrame = "{{15, 62}, {1001, 940}}";
 		};
 	};
