@@ -218,8 +218,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -337,6 +335,8 @@
 							<string>0pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -373,9 +373,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>8A13918414657B4000BC9E78</string>
+				<string>8A0076D814664308000DE0F4</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>8A13918514657B4000BC9E78</string>
+				<string>8A0076D914664308000DE0F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -510,11 +510,6 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>8AD2EEA10AA2F64A00B49FE9</string>
-		<string>8A13918F14657B4000BC9E78</string>
-		<string>8A13919014657B4000BC9E78</string>
-		<string>8A497A750AFDF39B00F674A4</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>8A13918D14657B4000BC9E78</string>
 		<string>/Users/kaihatu/AUPlug/SFCEcho/SFCEcho.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -539,7 +534,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>&lt;エディタがありません&gt;</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -595,7 +590,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>8AD2EEA10AA2F64A00B49FE9</string>
-				<string>8A1391A214658A8600BC9E78</string>
+				<string>8A0076DB14664310000DE0F4</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
