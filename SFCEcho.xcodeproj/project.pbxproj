@@ -379,7 +379,7 @@
 		8A426DAC0B1CA972002E81EE /* SFCEchodefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCEchodefines.h; sourceTree = "<group>"; };
 		8A7EB72B0B1F0F9E00F60189 /* SFCEchoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCEchoView.h; sourceTree = "<group>"; };
 		8A7EB72C0B1F0F9E00F60189 /* SFCEchoView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SFCEchoView.cpp; sourceTree = "<group>"; };
-		8BA05A660720730100365D66 /* SFCEcho.cpp */ = {isa = PBXFileReference; fileEncoding = 18446744071562067968; lastKnownFileType = sourcecode.cpp.cpp; path = SFCEcho.cpp; sourceTree = "<group>"; };
+		8BA05A660720730100365D66 /* SFCEcho.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.cpp.cpp; path = SFCEcho.cpp; sourceTree = "<group>"; };
 		8BA05A670720730100365D66 /* SFCEcho.exp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.exports; path = SFCEcho.exp; sourceTree = "<group>"; };
 		8BA05A680720730100365D66 /* SFCEcho.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = SFCEcho.r; sourceTree = "<group>"; };
 		8BA05A690720730100365D66 /* SFCEchoVersion.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SFCEchoVersion.h; sourceTree = "<group>"; };
