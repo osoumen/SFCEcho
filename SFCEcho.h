@@ -110,8 +110,8 @@ public:
 	/*! @method Version */
 	virtual ComponentResult	Version() { return kSFCEchoVersion; }
 	
-	int		GetNumCustomUIComponents () { return 1; }
-	
+	//int		GetNumCustomUIComponents () { return 1; }
+	/*
 	void	GetUIComponentDescs (ComponentDescription* inDescArray) {
         inDescArray[0].componentType = kAudioUnitCarbonViewComponentType;
         inDescArray[0].componentSubType = SFCEcho_COMP_SUBTYPE;
@@ -119,7 +119,7 @@ public:
         inDescArray[0].componentFlags = 0;
         inDescArray[0].componentFlagsMask = 0;
 	}
-    
+    */
 	
 protected:
 		class SFCEchoKernel : public AUKernelBase		// most real work happens here

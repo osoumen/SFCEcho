@@ -241,12 +241,12 @@ ComponentResult		SFCEcho::GetPropertyInfo (AudioUnitPropertyID	inID,
 {
 	if (inScope == kAudioUnitScope_Global) {
 		switch (inID) {
-			/*
+			
 			case kAudioUnitProperty_CocoaUI:
 				outWritable = false;
 				outDataSize = sizeof(AudioUnitCocoaViewInfo);
 				return noErr;
-				*/
+			
 			case kAudioUnitCustomProperty_Band1:
 			case kAudioUnitCustomProperty_Band2:
 			case kAudioUnitCustomProperty_Band3:
@@ -270,7 +270,7 @@ ComponentResult		SFCEcho::GetProperty(	AudioUnitPropertyID inID,
 {
 	if (inScope == kAudioUnitScope_Global) {
 		switch (inID) {
-			/*
+			
 			case kAudioUnitProperty_CocoaUI:
 			{
 				CFBundleRef bundle = CFBundleGetBundleWithIdentifier( CFSTR("com.VeMa.audiounit.SFCEcho") );
@@ -284,13 +284,13 @@ ComponentResult		SFCEcho::GetProperty(	AudioUnitPropertyID inID,
                 
                 if (bundleURL == NULL) return fnfErr;
                 
-				CFStringRef className = CFStringCreateCopy(kCFAllocatorDefault,CFSTR("SFCEcho_ViewFactory"));
+				CFStringRef className = CFSTR("SFCEcho_ViewFactory");
 				AudioUnitCocoaViewInfo cocoaInfo = { bundleURL, className };
 				*((AudioUnitCocoaViewInfo *)outData) = cocoaInfo;
 				
 				return noErr;
 			}
-				*/
+			
 			case kAudioUnitCustomProperty_Band1:
 			case kAudioUnitCustomProperty_Band2:
 			case kAudioUnitCustomProperty_Band3:
